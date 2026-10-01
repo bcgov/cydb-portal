@@ -6,6 +6,7 @@
 * status: proposed
 * date: 2026-09-21
 * decision-makers: Todd Scharien, Hannah MacDonald
+* consulted: Leo Lou (System Architect)
 
 ## Context and Problem Statement
 
