@@ -3,7 +3,7 @@
 
 # Decide on using disaster recovery (DR) on the Gold hosting tier
 
-* status: accepted
+* status: proposed
 * date: 2026-09-21
 * decision-makers: Todd Scharien, Hannah MacDonald
 * consulted: Jonathan Sharman (Keycloak team)

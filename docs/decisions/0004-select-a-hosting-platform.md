@@ -3,7 +3,7 @@
 
 # Select a cloud hosting platform
 
-* status: accepted
+* status: proposed
 * date: 2026-09-21
 * decision-makers: Todd Scharien, Hannah MacDonald
 

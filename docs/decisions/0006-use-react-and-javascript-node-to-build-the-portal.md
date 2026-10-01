@@ -3,7 +3,7 @@
 
 # Use React and JavaScript (Node.js) to build the portal
 
-* status: accepted
+* status: proposed
 * date: 2026-09-21
 * decision-makers: Todd Scharien, Hannah MacDonald
 
