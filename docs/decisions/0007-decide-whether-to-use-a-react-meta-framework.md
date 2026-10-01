@@ -1,9 +1,9 @@
 [//]: # (bc-madr v0.1)
 <!-- modified MADR 4.0.0 -->
 
-# Use plain React instead of Next.js
+# Decide whether to use a React meta-framework
 
-* status: accepted
+* status: proposed
 * date: 2026-10-01
 * decision-makers: Todd Scharien, Hannah MacDonald
 * consulted: Marcus Kernohan (Design System Components team)
