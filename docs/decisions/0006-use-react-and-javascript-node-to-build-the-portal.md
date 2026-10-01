@@ -6,6 +6,7 @@
 * status: proposed
 * date: 2026-09-21
 * decision-makers: Todd Scharien, Hannah MacDonald
+* consulted: Marcus Kernohan (Design System Components team)
 
 ## Context and Problem Statement
 
@@ -31,6 +32,7 @@ Chosen option: "React with JavaScript/Node.js", because it has a BC Gov npm pack
 ### Consequences
 
 * Good, because we can reuse pre-built, BC Gov-styled React components from `@bcgov/design-system-react-components` instead of building UI components from scratch
+* Good, because although `@bcgov/design-system-react-components` is in major version 0, we confirmed with Marcus Kernohan (from the team behind this project) that it is essentially stable.
 * Good, because the portal's UI will be visually and behaviourally consistent with other BC Gov applications built on the same component library
 * Good, because broad internal familiarity with React and JavaScript/Node.js makes it easier to find contributors and reduces onboarding time
 * Good, because it keeps us consistent with the framework used by [bcgov/caregiver-portal](https://github.com/bcgov/caregiver-portal), which may make it easier to share knowledge, patterns, or code between the two
