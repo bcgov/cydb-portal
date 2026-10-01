@@ -15,6 +15,7 @@ We need a place to host and run the CYDB portal frontend. BC Gov's private cloud
 
 * OpenShift Gold
 * OpenShift Silver
+* Virtual Machine with Podman
 * No alternative cloud services were considered
 
 ## Decision Outcome
@@ -50,3 +51,8 @@ Chosen option: "OpenShift Gold", because the social-middleware service this proj
 * Good, because it meets the same Protected B hosting requirements as Gold
 * Good, because it uses standard OpenShift routing without the extra GSLB/DR setup required for Gold failover
 * Bad, because it would require cross-cluster networking to communicate with social-middleware on Gold
+
+### Virtual Machine with Podman
+
+* Good, because deployment is greatly simplified without needing Kubernetes
+* Bad, because high-availability is considerably more difficult to implement.
