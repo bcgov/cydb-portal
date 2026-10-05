@@ -9,7 +9,7 @@
 
 ## Context and Problem Statement
 
-The portal needs a way to authenticate its users.
+The portal needs a way to authenticate its citizen users.
 
 What authentication strategy should we use for the portal?
 
