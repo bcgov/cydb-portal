@@ -1,36 +1,33 @@
 ```mermaid
 flowchart TD
+    email[Bulk email service]
     start([Start])
     user(User)
     portal[CYDB portal]
-    middle[Social middleware]
-    idBroker[OCIO-SSO]
+    middle[Social middleware framework]
     portalProxy[OCIO-APS]
-    socialProxy[OCIO-APS]
+    idBroker[OCIO-SSO]
     icm[ICM REST framework]
     forms[Embedded online forms solution]
-    email[Bulk email service]
 
 start-->user
+
 user-->portalProxy
 portalProxy-->portal
 
-portal-->socialProxy
+portal-->middle
 portal<-->idBroker
 portal<-->forms
 
 middle-->email
-email-->user
-
-socialProxy<-->idBroker
-socialProxy-->middle
-
+middle<-->idBroker
 middle-->icm
+
+email-->user
 
 subgraph mcsGold["MCS-Gold"]
     style mcsGold fill:#8B720E
     portalProxy
-    socialProxy
     idBroker
     portal
     middle
@@ -47,4 +44,4 @@ Additional information:
 - **MCS-Gold**: Managed Container Services - Private Cloud Gold Tier
 - **MCS-Emerald**: Managed Container Services - Private Cloud Emerald Tier
 - [ICM REST framework](https://dev.azure.com/bc-icm/SiebelCRM%20Lab/_wiki/wikis/SiebelCRM-Lab.wiki/575/Siebel-Application-Client-ID-(Service-Account)-Operation-for-DATA-API)
-- [Social middleware GitHub repo](https://github.com/bcgov/social-middleware)
+- [Social middleware framework - GitHub repo](https://github.com/bcgov/social-middleware)
