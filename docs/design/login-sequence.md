@@ -4,12 +4,13 @@ sequenceDiagram
     participant portalProxy as OCIO-APS
     participant portal as CYDB Portal
     participant middle as Social Middleware
-    participant idBroker as OCIO-SSO
+    participant idBroker as OIDC Provider
 
     User->>portalProxy: Clicks login button
     portalProxy->>portal: Forward & apply plugins to request
     portal->>middle: OAuth Login
-    middle->>idBroker:OIDC Authorization Code + PKCE
+    middle->>idBroker: OIDC Authorization Code + PKCE
+    idBroker->>User: Prompt BC Services Card Login
     User->>idBroker: Authenticate with BC Services Card
 
     alt Authentication failed
