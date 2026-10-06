@@ -6,7 +6,7 @@ flowchart TD
     portal[CYDB portal]
     middle[Social middleware framework]
     portalProxy[OCIO-APS]
-    idBroker[OCIO-SSO]
+    idBroker[OIDC Provider]
     icm[ICM REST framework]
     forms[Embedded online forms solution]
 
