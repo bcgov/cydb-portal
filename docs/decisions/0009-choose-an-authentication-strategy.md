@@ -33,6 +33,8 @@ Chosen option: "Common Hosted Single Sign-on (CSS) / Keycloak", because it is BC
 * Good, because we can use the BC Services Card to authenticate users
 * Good, because we offload the operation and maintenance of the identity/authentication infrastructure to the CSS team
 * Good, because CSS is well documented and already used across BC Gov, making it easier to find support and examples
+* Good, because it aligns with the organization's preference to use Keycloak as part of Connected Services
+    * Note: Keycloak is the only recommended way to integrate with the BC Services Card. Direct integration with BCSC IAM is not recommended.
 * Neutral, because we take on a dependency on the CSS team's roadmap, configuration process, and availability
 
 ## More Information

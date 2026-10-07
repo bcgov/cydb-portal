@@ -20,7 +20,7 @@ The Child and Youth Disability Benefit Portal will become the future digital fro
 
 We will use a [React web app (0006)](decisions/0006-use-react-and-javascript-node-to-build-the-portal.md) (connected to the [Social middleware](https://github.com/bcgov/social-middleware) backend) to serve users, hosted in [BC Gov's private cloud (0004)](decisions/0004-select-a-hosting-platform.md). Network access to the web app will go through an [OCIO APS reverse proxy (0010)](decisions/0010-choose-a-routing-solution-for-the-portal.md), where we can apply hardening plugins to requests as necessary.
 
-Users will log in using their [BC Services Card (0009)](decisions/0009-choose-an-authentication-strategy.md) to access benefits services and their de-identified identifier (DID) will be used to retrieve relevant  information from ICM.
+Users will log in using their [BC Services Card (via Keycloak) (0009)](decisions/0009-choose-an-authentication-strategy.md) to access benefits services and their de-identified identifier (DID) will be used to retrieve relevant  information from ICM.
 
 [Disaster recovery (DR) (0005)](decisions/0005-decide-on-using-disaster-recovery-on-gold.md) is not needed for this citizen-facing web app. Expected timelines for benefits fulfillment operate on the scale of weeks. Our chosen private cloud SLA allows for only a few hours downtime per year. If the web app is down for a few hours during the year, we expect downtime to not affect processing meaningfully.
 
