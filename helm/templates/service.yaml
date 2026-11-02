@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cydb-portal-service
+  labels:
+    app.kubernetes.io/name: cydb-portal-service
+spec:
+  type: {{ .Values.service.type }}
+  selector:
+    app.kubernetes.io/name: cydb-portal
+  ports:
+    - name: cydb-portal-service-port
+      protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.containerPort }}

@@ -1,0 +1,34 @@
+replicaCount: 2
+
+image:
+  repository: ghcr.io/bcgov/cydb-portal
+  tag: '<set by CI/CD>'
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 8080
+  containerPort: 8080
+
+aps:
+  namespace: '<set by CI/CD>'
+
+minReplicas: 2
+maxReplicas: 3
+targetUtilizationType: cpu
+targetAverageUtilization: 50
+
+# Requests are required for the HPA to calculate utilization
+resources:
+  requests:
+    cpu: 25m
+    memory: 64Mi
+  limits:
+    cpu: 100m
+    memory: 256Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
