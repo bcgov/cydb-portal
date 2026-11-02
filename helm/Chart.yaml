@@ -1,0 +1,4 @@
+apiVersion: v2
+name: cydb-portal
+description: A Helm chart for deploying cydb-portal
+version: 0.1.0
